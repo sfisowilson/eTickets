@@ -14,9 +14,10 @@ namespace eTickets.Models
         public int Id { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
+        public string CoverImage { get; set; }
         public MovieCategory MovieCategory { get; set; }
 
-        public decimal Price { get; set; }
+        public double Price { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public int UploadedBy { get; set; }
@@ -34,7 +35,7 @@ namespace eTickets.Models
         public Producer Producer { get; set; }
 
 
-        public List<Actor_Movie> Actor_Movie { get; set; }
+        public List<Actor_Movie> Actors_Movies { get; set; }
 
     }
 }
